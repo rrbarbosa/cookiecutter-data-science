@@ -3,5 +3,5 @@
     "repo_name": "{{ cookiecutter.project_name|replace(' ', '_') }}",
     "author_name": "Rafael Barbosa",
     "description": "A short description of the project.",
-    "year": "2016",
+    "year": "2016"
 }
