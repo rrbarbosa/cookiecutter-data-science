@@ -11,10 +11,10 @@
 #################################################################################
 
 requirements:
-	pip install -r requirements.txt
+	pip3 install -r requirements.txt
 
 data: requirements
-	python src/make_dataset.py
+	python3 src/data/make_dataset.py
 
 clean:
 	find . -name "*.pyc" -exec rm {} \;
