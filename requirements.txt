@@ -1,3 +1,10 @@
-mkdocs
-mkdocs-cinder
-cookiecutter
+click
+Sphinx
+coverage
+flake8
+python-dotenv
+dateutils
+pandas
+psycopg2
+ipdb
+seaborn
