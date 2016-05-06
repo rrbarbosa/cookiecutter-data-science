@@ -13,8 +13,12 @@
 requirements:
 	pip3 install -r requirements.txt
 
-data: requirements
+data: 
+	# generates data/raw/dataset.csv.gz
 	python3 src/data/make_dataset.py
+
+analysis: data/raw/dataset.csv.gz
+	python3 src/analysis.py
 
 clean:
 	find . -name "*.pyc" -exec rm {} \;

@@ -12,6 +12,12 @@ def main(input_filepath, output_filepath):
     logger = logging.getLogger(__name__)
     logger.info('making final data set from raw data')
 
+    data_dir = os.path.join(os.path.dirname(__file__), '../../data/raw')
+    data_path = os.path.join(data_dir, 'dataset.csv.gz')
+    # 'touch' file
+    with open(data_path, 'a'):
+        os.utime(data_path, None)
+
 
 if __name__ == '__main__':
     log_fmt = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
@@ -22,4 +28,3 @@ if __name__ == '__main__':
     dotenv.load_dotenv(dotenv_path)
 
     main()
-
