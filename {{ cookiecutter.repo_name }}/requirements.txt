@@ -1,5 +1,12 @@
-click
 Sphinx
+click
 coverage
+dateutils
 flake8
+ipdb
+matplotlib
+pandas
+psycopg2
 python-dotenv
+seaborn
+sqlalchemy
